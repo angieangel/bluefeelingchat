@@ -62,7 +62,7 @@ export class AppComponent {
       this.init = false;
     }else{
       if(this.order == true){
-        this.speechService.setVoice("Microsoft Zira Desktop - English (United States));
+        this.speechService.setVoice("Microsoft Zira Desktop - English (United States)");
       }else{
         this.speechService.setVoice("Microsoft David Desktop - English (United States)");
       }
