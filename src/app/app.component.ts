@@ -58,13 +58,13 @@ export class AppComponent {
   /*Metodo de lectura*/
   read(text: string){
     if(this.init == true){
-      this.speechService.setVoice("Microsoft Zira Desktop - English (United States)");
+      this.speechService.setVoice("Microsoft Zira Desktop - English (United States)","Samantha");
       this.init = false;
     }else{
       if(this.order == true){
-        this.speechService.setVoice("Microsoft Zira Desktop - English (United States)");
+        this.speechService.setVoice("Microsoft Zira Desktop - English (United States)","Samantha");
       }else{
-        this.speechService.setVoice("Microsoft David Desktop - English (United States)");
+        this.speechService.setVoice("Microsoft David Desktop - English (United States)","Alex");
       }
     }
     this.speechService.read(text).subscribe((data) => {//Se invoca servicio de lectura del mensaje
